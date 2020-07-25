@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/custom_colorAppBar</item>
+        <item name="colorPrimaryDark">@color/custom_colorStatusBar</item>
+        <item name="colorAccent">@color/custom_colorAppBar</item>
+        <item name="android:windowBackground">@color/custom_colorBackgroundActivity</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CardFromRV">
+        <item name="android:background">@color/custom_colorBackgroundCard</item>
+    </style>
+
+    <style name="CustomStyleTextView">
+        <item name="android:textColor">@color/custom_colorText</item>
+        <item name="android:textSize">@dimen/custom_textSize</item>
+    </style>
+    
+
+</resources>
