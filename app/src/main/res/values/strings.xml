@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">AppTest</string>
-    <string name="label_device_memory">Device memory</string>
-    <string name="label_free">Free:</string>
-    <string name="label_world_regions">World regions</string>
+    <string name="app_name">Download Maps</string>
+    <string name="device_memory">Device memory</string>
+    <string name="free_memory">Free %1$.2f Gb</string>
+    <string name="tv_head">Europe</string>
+    <string name="map_icon_description">map icon</string>
+    <string name="download_start">https://download.osmand.net/download.php?standard=yes&amp;file=</string>
+    <string name="download_europe">_europe</string>
+    <string name="download_end">_2.obf.zip</string>
+    <string-array name="downloaded">
+
+    </string-array>
 </resources>

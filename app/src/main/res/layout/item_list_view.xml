@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundActivity"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightItemList"
+        android:background="@color/colorItemList">
+
+        <ImageView
+            android:id="@+id/iv_item_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/map_icon_description"
+            android:src="@drawable/ic_map" />
+
+        <RelativeLayout
+            android:id="@+id/rv_with_divider"
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@id/iv_item_map"
+            android:layout_marginStart="20dp"
+            android:layout_height="@dimen/heightItemList">
+            <TextView
+                android:id="@+id/tv_item_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSizeItemList" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_download"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingBottom="5dp"
+                android:layout_below="@id/tv_item_country"
+                android:layout_marginEnd="49dp"
+                android:progressTint="#4169E0" />
+
+            <ImageButton
+                android:id="@+id/ib_item_import"
+                android:src="@drawable/ic_action_import"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/colorItemList"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <ImageButton
+                android:id="@+id/ib_item_remove"
+                android:src="@drawable/ic_action_remove_dark"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:backgroundTint="@color/colorItemList"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:id="@+id/v_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorDivider"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
